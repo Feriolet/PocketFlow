@@ -356,8 +356,11 @@ class Generate(object):
         for i in range(num_gen):
             data_clone = data.clone().detach()
             out = self.run(data_clone)
+
+            mol = None
             if out:
                 mol, _ = out
+
             del data_clone
             if mol is not None:
                 #print(len(mol.GetAtoms()))
