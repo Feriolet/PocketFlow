@@ -160,6 +160,8 @@ dependencies:
       - pillow==12.2.0
       - protobuf==7.34.1
       - psutil==7.2.2
+      - --extra-index-url https://download.pytorch.org/whl/cu117
+      - --find-links https://data.pyg.org/whl/torch-1.13.0+cu117.html
       - pyg-lib==0.4.0+pt113cu117
       - pyparsing==3.3.2
       - rdkit==2026.3.2
